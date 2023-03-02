@@ -1,0 +1,7 @@
+The attribute Month Salary has some missing values. We can fill them with the median (2009).
+
+We have a cardinality problem with the attribute Gender. We have 6 options: ['1', 'l', 'M', '0', 'O', 'F']. After plotting them, we see that most are 0 and 1. To solve this problem we can map 'M' and 'F' to '0' and '1', and map 'O' to 0 and 'l' to '1'.
+
+We have outliers in the attribute Debt. We can set bounds with quartile. I chose 98% and 2%. So I had only a few outliers out of range. For these outliers if it was lower than the lower bound I set it to the lower bound, same applies for upper bound.
+
+The salary depends a lot on the city you work in. On average Vilnius has the highest salary, then Kaunas and then Klaipeda.
